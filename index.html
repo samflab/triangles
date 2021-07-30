@@ -32,22 +32,28 @@
         <button class="tablinks" onclick="openCity(event, 'Quiz')">Quiz</button>
       </div>
     </div>
-    <div id="Angles" class="tabcontent active">
+    <div id="Angles" class="tabcontent">
       <h3>Angles of Triangles</h3>
-      <p>There's a reason why we call it a triangle because it has <em>tri-angles</em>. Com'on now, fill up the blanks.</p>
-      <input type="number" id="first-angle"/>
-      <input type="number" id="second-angle"/>
-      <input type="number" id="third-angle"><br/>
+      <p>
+        There's a reason why we call it a triangle because it has
+        <em>tri-angles</em>. Com'on now, fill up the blanks.
+      </p>
+      <input type="number" id="first-angle" />
+      <input type="number" id="second-angle" />
+      <input type="number" id="third-angle" /><br />
 
-      <span id="note">*assuming that all the values you enter are in degree</span> 
-      <br/>
+      <span id="note"
+        >*assuming that all the values you enter are in degree</span
+      >
+      <br />
       <button>Check</button>
-  
+
       <div id="angles-result"></div>
     </div>
 
-    <div id="Hypotenuse" class="tabcontent">
+    <div id="Hypotenuse" class="tabcontent active">
       <h3>Check for Hypotenuse</h3>
+      <p>Still struggling with Pythagoras Theorem?</p>
       <div class="triangle">
         <label class="label sideA">a</label>
         <label class="label sideB">b</label>
@@ -55,14 +61,31 @@
         <div class="line line1"></div>
         <div class="line line2"></div>
         <div class="line line3"></div>
-    </div>
+      </div>
+      <label>a =</label> <input type="number" /> <label>b =</label>
+      <input type="number" /><br />
+      <button>Get Hypotenuse</button>
+      <div>
+        c =
+        <div id="hypotenuse-result"></div>
+      </div>
+
+      <div id="formula">
+        <!-- <h4>The Formula</h4>
+        c =&radic;
+        <span style="margin-top:5px ;"
+          >&nbsp;<sub>(a</sub>2+<sub>b</sub>2) &nbsp;</span
+        > -->
+      </div>
     </div>
 
     <div id="Area" class="tabcontent">
       <h3>Area of Triangles</h3>
+      <p>To be added soon</p>
     </div>
     <div id="Quiz" class="tabcontent">
       <h3>Fun Quiz with Triangles !</h3>
+      <p>To be added soon</p>
     </div>
     <div class="background">
       <span></span>
