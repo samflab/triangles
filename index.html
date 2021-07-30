@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="particles.css" />
+    <title>Fun with Triangles</title>
+  </head>
+  <body>
+    <div class="options">
+      <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'Angles')">
+          Angles
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Hypotenuse')">
+          Hypotenuse Check
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Area')">Area</button>
+        <button class="tablinks" onclick="openCity(event, 'Quiz')">Quiz</button>
+      </div>
+    </div>
+    <div id="Angles" class="tabcontent active">
+      <h3>Angles of Triangles</h3>
+    </div>
+
+    <div id="Hypotenuse" class="tabcontent">
+      <h3>Check for Hypotenuse</h3>
+    </div>
+
+    <div id="Area" class="tabcontent">
+      <h3>Area of Triangles</h3>
+    </div>
+    <div id="Quiz" class="tabcontent">
+      <h3>Fun Quiz with Triangles !</h3>
+    </div>
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <script>
+      function openCity(evt, eventName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(eventName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      document.getElementById("Angles").style.display = "block";
+    </script>
+  </body>
+</html>
