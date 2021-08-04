@@ -54,14 +54,7 @@
     <div id="Hypotenuse" class="tabcontent active">
       <h3>Check for Hypotenuse</h3>
       <p>Still struggling with Pythagoras Theorem?</p>
-      <div class="triangle">
-        <label class="label sideA">a</label>
-        <label class="label sideB">b</label>
-        <label class="label sideC">c</label>
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
-      </div>
+      
       <label>a =</label> <input type="number" /> <label>b =</label>
       <input type="number" /><br />
       <button>Get Hypotenuse</button>
@@ -81,8 +74,197 @@
 
     <div id="Area" class="tabcontent">
       <h3>Area of Triangles</h3>
-      <p>To be added soon</p>
+      <p>Select an option below as per the data you have for a triangle</p>
+      <form class="formulaSelectionForm">
+        <div class="radio">
+           
+          <input
+            type="radio"
+            id="calArea1"
+            name="areaCalOption"
+            value="areaCalOption1"
+          />
+           
+          <label class="label" for="calArea1"
+            >Check with base and height of the triangle</label
+          >
+           
+        </div>
+        <br />
+
+        <div class="radio">
+          <input
+            type="radio"
+            id="calArea2"
+            name="areaCalOption"
+            value="areaCalOption2"
+          />
+           
+          <label class="label" for="calArea2"
+            >Check with the length of three sides</label
+          >
+           
+        </div>
+        <br />
+
+        <div class="radio">
+          <input
+            type="radio"
+            id="calArea3"
+            name="areaCalOption"
+            value="areaCalOption3"
+          />
+           
+          <label class="label" for="calArea3"
+            >Check with length of 2 sides with angle in between</label
+          >
+          <br />
+        </div>
+        <br />
+      </form>
+
+      <div style="margin-top: 1rem; margin-bottom: 1rem" class="areaCalBlock">
+        
+
+        <form class="form" class="formForAreaCal">
+          <label class="label"
+            >base=
+            <input
+              class="inputBox inputSide inputInOption1"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+
+          <label class="label"
+            >height=
+            <input
+              class="inputBox inputSide inputInOption1"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+          <br />
+          <button class="button" id="submitBtn">calculate</button>
+        </form>
+        <h2>Area will be calculated here-</h2>
+        <div class="outputHere">
+          <label class="label">Area=</label>
+          <div style="display: inline" class="areaShowHere">
+            1/2*base*height
+          </div>
+        </div>
+      </div>
+
+      <!-- area calculation 2nd formula -->
+      <div style="margin-top: 1rem; margin-bottom: 1rem" class="areaCalBlock">
+        
+
+        <form class="form" class="formForAreaCal">
+          <label class="label"
+            >a=
+            <input
+              class="inputBox inputSide inputInOption2"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+
+          <label class="label"
+            >b=
+            <input
+              class="inputBox inputSide inputInOption2"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+
+          <label class="label"
+            >c=
+            <input
+              class="inputBox inputSide inputInOption2"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+          <p class="label error" style="color: brown; display: none">
+            Enter valid side lengths such that each side length should be less
+            than sum of other two sides
+          </p>
+          <br />
+          <button class="button" id="submitBtn">calculate</button>
+        </form>
+        <h2>Area will be calculated here-</h2>
+        <div class="outputHere">
+          <label class="label">Area=</label>
+          <div style="display: inline" class="areaShowHere">
+            <span style="font-size: 1.8rem">√</span
+            ><span style="border-top: 2px solid black; padding-top: 0.1rem"
+              >s(s-a)(s-b)(s-c)</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- area calculation 3rd formula -->
+      <div style="margin-top: 1rem; margin-bottom: 1rem" class="areaCalBlock">
+       
+
+        <form class="form" class="formForAreaCal">
+          <label class="label"
+            >b=
+            <input
+              class="inputBox inputSide inputInOption3"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+
+          <label class="label"
+            >c=
+            <input
+              class="inputBox inputSide inputInOption3"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+          <label class="label"
+            >∠A(deg)=
+            <input
+              class="inputBox inputSide inputInOption3"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              max="360"
+              required
+            />
+          </label>
+          <br />
+          <button class="button" id="submitBtn">calculate</button>
+          <br />
+        </form>
+        <h2>Area will be calculated here-</h2>
+        <div class="outputHere">
+          <label class="label">Area=</label>
+          <div style="display: inline" class="areaShowHere">1/2*b*c*sin(A)</div>
+        </div>
+      </div>
     </div>
+
     <div id="Quiz" class="tabcontent">
       <h3>Fun Quiz with Triangles !</h3>
       <p>To be added soon</p>
@@ -141,5 +323,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="area.js"></script>
   </body>
 </html>
