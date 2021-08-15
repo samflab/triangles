@@ -1,8 +1,8 @@
 const quizForm = document.querySelector(".quiz-form");
 const submitQuizBtn = document.querySelector("#submit-quiz");
-const outputDiv = document.querySelector("#quiz-output");
+const quizOutputDiv = document.querySelector("#quiz-output");
 
-const correctAnswers = ["right","equilateral"];
+const correctAnswers = ["right", "equilateral", "acute", "2 congruent sides", "180 degrees"];
 
 function calculateScore(){
     let score = 0;
@@ -15,8 +15,8 @@ function calculateScore(){
         index++;
     }
     
-    console.log(score);
-    outputDiv.innerHTML ="Your Score is: " + score;
+    //console.log(score);
+    quizOutputDiv.innerHTML ="Your Score is: " + score;
 }
 
 submitQuizBtn.addEventListener("click", calculateScore);
