@@ -15,7 +15,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="particles.css" />
     <link rel="stylesheet" href="triangle.css" />
     <title>Fun with Triangles</title>
   </head>
@@ -46,7 +45,7 @@
         >*assuming that all the values you enter are in degree</span
       >
       <br />
-      <button>Check</button>
+      <button id="check-triangle">Check</button>
 
       <div id="angles-result"></div>
     </div>
@@ -54,7 +53,7 @@
     <div id="Hypotenuse" class="tabcontent active">
       <h3>Check for Hypotenuse</h3>
       <p>Still struggling with Pythagoras Theorem?</p>
-      
+
       <label>a =</label> <input type="number" /> <label>b =</label>
       <input type="number" /><br />
       <button>Get Hypotenuse</button>
@@ -124,8 +123,6 @@
       </form>
 
       <div style="margin-top: 1rem; margin-bottom: 1rem" class="areaCalBlock">
-        
-
         <form class="form" class="formForAreaCal">
           <label class="label"
             >base=
@@ -162,8 +159,6 @@
 
       <!-- area calculation 2nd formula -->
       <div style="margin-top: 1rem; margin-bottom: 1rem" class="areaCalBlock">
-        
-
         <form class="form" class="formForAreaCal">
           <label class="label"
             >a=
@@ -218,8 +213,6 @@
 
       <!-- area calculation 3rd formula -->
       <div style="margin-top: 1rem; margin-bottom: 1rem" class="areaCalBlock">
-       
-
         <form class="form" class="formForAreaCal">
           <label class="label"
             >b=
@@ -267,62 +260,35 @@
 
     <div id="Quiz" class="tabcontent">
       <h3>Fun Quiz with Triangles !</h3>
-      <p>To be added soon</p>
-    </div>
-    <div class="background">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <form class="quiz-form">
+        <div class="question-container">
+          <p>1. This type of triangle has one 90 degree angle.</p>
+          <label><input type="radio" name="ques1" value="acute" /> Acute</label>
+          <label><input type="radio" name="ques1" value="right" /> Right</label>
+          <label
+            ><input type="radio" name="ques1" value="obtuse" />Obtuse</label
+          >
+        </div>
+        <div class="question-container">
+          <p>2. A triangle where all sides are congruent is called</p>
+          <label
+            ><input type="radio" name="ques2" value="scalene" /> Scalene</label
+          >
+          <label
+            ><input type="radio" name="ques2" value="isosceles" />
+            Isosceles</label
+          >
+          <label><input type="radio"  name="ques2" value="equilateral"/>Equilateral</label>
+        </div>
+        
+      </form>
+      <button id="submit-quiz">Submit Quiz</button>
+      <div id="quiz-output"></div>
     </div>
 
     <script src="app.js"></script>
+    <script src="check-triangle.js"></script>
     <script src="area.js"></script>
+    <script src="quiz.js"></script>
   </body>
 </html>
