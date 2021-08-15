@@ -54,12 +54,11 @@
       <h3>Check for Hypotenuse</h3>
       <p>Still struggling with Pythagoras Theorem?</p>
 
-      <label>a =</label> <input type="number" /> <label>b =</label>
-      <input type="number" /><br />
-      <button>Get Hypotenuse</button>
+      <label>a =</label> <input type="number" id="base" /> <label>b =</label>
+      <input type="number" id="perpendicular" /><br />
+      <button id="get-hypotenuse-btn">Check</button>
       <div>
-        c =
-        <div id="hypotenuse-result"></div>
+        <div id="hypotenuse-result">c =</div>
       </div>
 
       <div id="formula">
@@ -278,9 +277,14 @@
             ><input type="radio" name="ques2" value="isosceles" />
             Isosceles</label
           >
-          <label><input type="radio"  name="ques2" value="equilateral"/>Equilateral</label>
+          <label
+            ><input
+              type="radio"
+              name="ques2"
+              value="equilateral"
+            />Equilateral</label
+          >
         </div>
-        
       </form>
       <button id="submit-quiz">Submit Quiz</button>
       <div id="quiz-output"></div>
@@ -288,6 +292,7 @@
 
     <script src="app.js"></script>
     <script src="check-triangle.js"></script>
+    <script src="find-hypotenuse.js"></script>
     <script src="area.js"></script>
     <script src="quiz.js"></script>
   </body>
