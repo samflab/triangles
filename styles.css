@@ -1,11 +1,10 @@
-
-body{
-  background-color: #1F6A73;
-  color:#D3EBEB;
+body {
+  background-color: #1f6a73;
+  color: #d3ebeb;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.options{
+.options {
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -30,26 +29,25 @@ body{
   transition: 0.3s;
   font-size: 17px;
   background-color: transparent;
-  background-color: #D3EBEB;
-  font-family: 'Merriweather Sans', sans-serif;
+  background-color: #d3ebeb;
+  font-family: "Merriweather Sans", sans-serif;
 }
-.tablinks{
+.tablinks {
   border-radius: 10px;
   min-width: 15vw;
-
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color:#5D96A6;
-  color: #D3EBEB;
+  background-color: #5d96a6;
+  color: #d3ebeb;
   transition: 0.4s;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color:#5D96A6;
-  color: #D3EBEB;
+  background-color: #5d96a6;
+  color: #d3ebeb;
 }
 
 /* Style the tab content */
@@ -58,53 +56,60 @@ body{
   display: none;
   padding: 6px 12px;
   border-top: none;
-  background: linear-gradient(to bottom, #D3EBEB, #D0DBC4, #CEBFAC);
-  color:#1F6A73;
+  background: linear-gradient(to bottom, #d3ebeb, #d0dbc4, #cebfac);
+  color: #1f6a73;
   border-radius: 30px 30px 0px 0;
   height: 300vh;
 }
 
-h3{
-  font-family: 'Acme', sans-serif;
+h3 {
+  font-family: "Acme", sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
 }
 
-.tabcontent > input, .inputInOption1, .inputInOption2, .inputInOption3{
+.tabcontent > input,
+.inputInOption1,
+.inputInOption2,
+.inputInOption3 {
   background-color: #eeebeb;
   border-radius: 5px;
-  border:none;
+  border: none;
   padding: 0.5rem 1rem;
   margin: 1em;
-  color: #1F6A73;
+  color: #1f6a73;
   font-size: 1.2rem;
-  width: 10%;  
+  width: 10%;
   outline: none;
   /* box-shadow: #cebfac -2px 6px 8px 2px; */
 }
 
-#Area > input, .inputInOption1, .inputInOption2, .inputInOption3{
-  width: 40%; 
+#Area > input,
+.inputInOption1,
+.inputInOption2,
+.inputInOption3 {
+  width: 40%;
 }
 
-.tabcontent > button, #submitBtn{
-  background-color:#D0DBC4;
-  color: #1F6A73;
+.tabcontent > button,
+#submitBtn {
+  background-color: #d0dbc4;
+  color: #1f6a73;
   border-radius: 5px;
-  border:none;
+  border: none;
   padding: 0.5rem 2rem;
   margin: 1rem;
   font-size: 1.2rem;
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   cursor: pointer;
-  box-shadow:#5d96a6 -1px 4px 6px 0px;
+  box-shadow: #5d96a6 -1px 4px 6px 0px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.question-container{
+.question-container {
   border: #3b5e8c 2px solid;
   width: 50%;
   margin-left: 25%;
@@ -113,27 +118,48 @@ input::-webkit-inner-spin-button {
   padding: 25px;
   border-radius: 10px;
   font-size: 1.2rem;
-
 }
-@media screen and (max-width:960px) {
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-top: 1%;
+  text-align: center;
+  background-color: #1f6a73;
+  color: #5d96a6;
+  height: 10%;
+  width: 100%;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #cebfac;
+}
+.social-media-icons{
+  
+size: 20px;
+justify-content: center;
+margin:10px
+}
+@media screen and (max-width: 960px) {
   .options {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 30vh; 
+    height: 30vh;
   }
-  .tab{
+  .tab {
     display: flex;
     flex-wrap: wrap;
   }
-  .tablinks{
+  .tablinks {
     border-radius: 10px;
     margin: 1rem;
     width: 40%;
   }
-  .tabcontent > input{
+  .tabcontent > input {
     font-size: 1rem;
   }
 }
-
-
